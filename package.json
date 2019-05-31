@@ -4,7 +4,7 @@
   "description": "an app to calculate how many space-years you've had, and have left",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --watchAll --coverage",
     "build": "npm run babel; webpack --mode development",
     "lint": "eslint src/*.js",
     "start": "npm run build; webpack-dev-server --open --mode development",
