@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { Solarage } from './../src/solarages';
+import { Solarage, isNotFutureDate } from './../src/solarages';
 import { isTSAnyKeyword, exportAllDeclaration } from '@babel/types';
 
 
@@ -57,6 +57,15 @@ describe('solarage',() => {
       let lifeExpectancy = 60;
       let planet = "Earth";
       expect(solarage.yearsLeft(lifeExpectancy, planet)).toEqual(22);
+    });
+  });
+
+  describe('validation functions', () => {
+    test('should return true if new date is not in the future', () => {
+      let pastDate = "12-18-1980";
+      let futureDate = "12-18-2222";
+      expect(isNotFutureDate(pastDate)).toBe(true);
+      expect(isNotFutureDate(futureDate)).toBe(false);
     });
   });
 });

@@ -5,7 +5,7 @@ export class Solarage {
   constructor(bdayString) {
     this.bday = new Date(bdayString);
     this.now = new Date();
-    this.age = Math.abs(this.now - this.bday);
+    this.msAge = Math.abs(this.now - this.bday);
     this.planets = {
       "Mercury": 88,
       "Venus": 225,
@@ -19,11 +19,11 @@ export class Solarage {
   }
 
   ageInYears(){
-    return this.age/(365*24*60*60*1000);
+    return this.msAge/(365*24*60*60*1000);
   }
 
   ageInDays(){
-    return this.age/(24*60*60*1000);
+    return this.msAge/(24*60*60*1000);
   }
 
   getPlanet(planetsKey){
@@ -37,6 +37,13 @@ export class Solarage {
   }
 
   yearsLeft(lifeExpectancyString, planetsKey){
-    return parseInt(lifeExpectancyString) - this.planetAge(planetsKey);
+    let solarExpectancy = Math.floor(parseInt(lifeExpectancyString)*365/this.planets[planetsKey]);
+    return solarExpectancy - this.planetAge(planetsKey);
   }
+}
+
+export function isNotFutureDate(dateString){
+  let now = new Date();
+  let given = new Date(dateString);
+  return ((now - given) > 0);
 }
