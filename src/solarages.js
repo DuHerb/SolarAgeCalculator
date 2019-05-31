@@ -26,13 +26,17 @@ export class Solarage {
     return this.age/(24*60*60*1000);
   }
 
-  getPlanet(planetOptionValue){
-    return this.planets[planetOptionValue];
+  getPlanet(planetsKey){
+    return this.planets[planetsKey];
   }
 
   //solar age will be calculated by days for a marginal
   //gain in accuracy.
-  planetAge(planetOptionValue){
-    return Math.floor(this.ageInDays()/this.planets[planetOptionValue]);
+  planetAge(planetsKey){
+    return Math.floor(this.ageInDays()/this.planets[planetsKey]);
+  }
+
+  yearsLeft(lifeExpectancyString, planetsKey){
+    return parseInt(lifeExpectancyString) - this.planetAge(planetsKey);
   }
 }
