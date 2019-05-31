@@ -23,12 +23,15 @@
       <select name="planetInput" id="planetInput">
         <option value="Mercury">Mercury</option>
         <option value="Venus">Venus</option>
-        <option value="Earth">Earth</option>
+        <option value="Earth" selected>Earth</option>
         <option value="Mars">Mars</option>
         <option value="Jupiter">Jupiter</option>
       </select>
+      <label for="lifeExpectancy">Life Expecancy:</label>
+      <input type="number" id="lifeExpectancy" name="lifeExpectancy" placeholder="you can leave this blank">
       <button id="userSubmit" class="btn btn-success">Submit your info</button>
     </form>
-      <output></output>
+      <output id="planetAge"></output>
+      <output id="yearsLeft"></output>
   </body>
 </html>
