@@ -1,9 +1,13 @@
 # SolarAgeCalculator
+
 ###An App to calculate your age on each planet and how much spacetime you've got left.
 
 ###Author:
+
 ####Dustin Herboldshimer
+
 ###Version:
+
 ####0.0.1 - May 31 2019
 
 ###Installation:
