@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "build": "webpack --mode development",
+    "build": "npm run babel; webpack --mode development",
     "lint": "eslint src/*.js",
-    "start": "npm run build; webpack-dev-server --open --mode development"
+    "start": "npm run build; webpack-dev-server --open --mode development",
+    "babel": "./node_modules/.bin/babel src --out-dir lib"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
   },
   "homepage": "https://github.com/DuHerb/SolarAgeCalculator#readme",
   "devDependencies": {
+    "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "babel-jest": "^24.8.0",
