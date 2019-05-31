@@ -18,12 +18,12 @@ describe('solarage', function() {
   });
 
   test('should return users age in years', () => {
-    let earthAge = new Solarage("12-18-1980").inYears();
+    let earthAge = new Solarage("12-18-1980").ageInYears();
     expect(Math.floor(earthAge)).toEqual(38);
   });
 
   test('should return users age in days', () => {
-    let earthAge = new Solarage("12-18-1980").inDays();
+    let earthAge = new Solarage("12-18-1980").ageInDays();
     expect(Math.floor(earthAge)).toEqual(14043);
   });
 
@@ -31,6 +31,18 @@ describe('solarage', function() {
     let userString = "Jupiter";
     let solarage = new Solarage("12-18-1980");
     expect(solarage.getPlanet(userString)).toEqual(solarage.planets["Jupiter"]);
+  });
+
+  test('should return solarage according to selected planet', () => {
+    let solarage = new Solarage("12-18-1980");
+    let planetOptionValue = "Mercury";
+    let planetOptionValue2 = "Jupiter";
+    let planetOptionValue3 = "Venus";
+    let planetOptionValue4 = "Mars";
+    expect(solarage.planetAge(planetOptionValue)).toEqual(159);
+    expect(solarage.planetAge(planetOptionValue2)).toEqual(3);
+    expect(solarage.planetAge(planetOptionValue3)).toEqual(62);
+    expect(solarage.planetAge(planetOptionValue4)).toEqual(20);
   });
 
 
