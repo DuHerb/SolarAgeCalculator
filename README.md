@@ -1,16 +1,12 @@
 # SolarAgeCalculator
 ###An App to calculate your age on each planet and how much spacetime you've got left.
-----
+
 ###Author:
 ####Dustin Herboldshimer
 ###Version:
 ####0.0.1 - May 31 2019
-----
-
 
 ###Installation:
-
-----------
 
 ##Specifications:
 | Spec                                                                  | Input      | Output                                                                                                      |
@@ -28,7 +24,7 @@
 | User uses select box to choose which planets data to display          | Mercury    | Your BirthDate = Dec 18 1980 Earth Age = 38 Life Expectancy = 80 Mercury Age = 158.5 SpaceTime Left = 173.5 |
 
 ##Known Issues, Bugs, and ToDos
-------
+
 ## Support and contact details
 
 Contact Dustin Herboldshimer at dustnpdx@gmail.com
