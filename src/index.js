@@ -8,10 +8,8 @@ $(document).ready(function(){
   $('#userSubmit').on('click', function(e){
     e.preventDefault();
     $('output').empty();
-    let userBday = $('#userBday').val();
     let userPlanetOption = $('#planetInput').val();
-    let solarage = new Solarage(userBday);
-    let planetAge = solarage.planetAge(userPlanetOption);
-    $('output').text("You are " + planetAge + " years old on " + userPlanetOption + ".");
+    let solarage = new Solarage($('#userBday').val());
+    $('output').text("You are " + solarage.planetAge(userPlanetOption) + " years old on " + userPlanetOption + ".");
   });
 });
