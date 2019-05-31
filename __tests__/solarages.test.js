@@ -3,7 +3,7 @@ import { Solarage } from './../src/solarages';
 import { isTSAnyKeyword, exportAllDeclaration } from '@babel/types';
 
 
-describe('solarage', function() {
+describe('solarage',() => {
   let solarage;
 
   beforeEach(()=>{
