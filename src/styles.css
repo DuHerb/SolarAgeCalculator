@@ -1,3 +1,22 @@
-output {
-  color: red;
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#lifeExpectancy {
+  width: 200px;
+}
+
+#display {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }

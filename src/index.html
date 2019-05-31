@@ -14,24 +14,36 @@
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <h1>Solar Age Calulater</h1>
-    <h2>Enter your age, pick a planet, and get ready to blow out some candles.</h2>
-    <form>
-      <label for="userBday">Enter your birthday:</label>
-      <input type="date" name="userBday" id="userBday">
-      <label for="planetInput">Pick a planet:</label>
-      <select name="planetInput" id="planetInput">
-        <option value="Mercury">Mercury</option>
-        <option value="Venus">Venus</option>
-        <option value="Earth" selected>Earth</option>
-        <option value="Mars">Mars</option>
-        <option value="Jupiter">Jupiter</option>
-      </select>
-      <label for="lifeExpectancy">Life Expecancy:</label>
-      <input type="number" id="lifeExpectancy" name="lifeExpectancy" placeholder="you can leave this blank">
-      <button id="userSubmit" class="btn btn-success">Submit your info</button>
-    </form>
-      <output id="planetAge"></output>
-      <output id="yearsLeft"></output>
+    <header>
+      <h1>Solar Age Calulater</h1>
+      <h2>Enter your age, pick a planet, and get ready to blow out some candles.</h2>
+    </header>
+    <main class ="container">
+      <form>
+        <div class="form-group">
+          <label for="userBday">Enter your birthday:</label>
+          <input type="date" name="userBday" id="userBday">
+        </div>
+        <div class="form-group">
+          <label for="planetInput">Pick a planet:</label>
+          <select name="planetInput" id="planetInput">
+            <option value="Mercury">Mercury</option>
+            <option value="Venus">Venus</option>
+            <option value="Earth" selected>Earth</option>
+            <option value="Mars">Mars</option>
+            <option value="Jupiter">Jupiter</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="lifeExpectancy">Life Expecancy:</label>
+          <input type="number" id="lifeExpectancy" name="lifeExpectancy" placeholder="you can leave this blank">
+        </div>
+        <button id="userSubmit" class="btn btn-success">Submit your info</button>
+      </form>
+      <section id="display">
+        <output id="planetAge"></output>
+        <output id="yearsLeft"></output>
+      </section>
+    </main>
   </body>
 </html>
