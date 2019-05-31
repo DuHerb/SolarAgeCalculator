@@ -29,6 +29,8 @@
 
 ##Known Issues, Bugs, and ToDos
 
+1. needs more validation options to trigger display messages(maybe an error parser in the solarage object)
+2. readme is a mess
 ## Support and contact details
 
 Contact Dustin Herboldshimer at dustnpdx@gmail.com
