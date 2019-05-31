@@ -39,12 +39,13 @@ describe('solarage', function() {
     let planetOptionValue2 = "Jupiter";
     let planetOptionValue3 = "Venus";
     let planetOptionValue4 = "Mars";
+    let planetOptionValue5 = "Earth";
     expect(solarage.planetAge(planetOptionValue)).toEqual(159);
     expect(solarage.planetAge(planetOptionValue2)).toEqual(3);
     expect(solarage.planetAge(planetOptionValue3)).toEqual(62);
     expect(solarage.planetAge(planetOptionValue4)).toEqual(20);
+    expect(solarage.planetAge(planetOptionValue5)).toEqual(38);
   });
-
 
 });
 

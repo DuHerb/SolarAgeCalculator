@@ -1,6 +1,6 @@
 //Solarage objects store planetary conversion factors, the current
-//date, a users birthday and their age.  Age is stored as milliseconds by nature
-//of the javascript date object
+//date, a user's birthday and their calculated age.  Age is stored
+//as milliseconds by nature of the javascript Date object
 export class Solarage {
   constructor(bdayString) {
     this.bday = new Date(bdayString);
@@ -9,6 +9,7 @@ export class Solarage {
     this.planets = {
       "Mercury": 88,
       "Venus": 225,
+      "Earth": 365,
       "Mars": 687,
       "Jupiter":(11.8*365),
       "Saturn":(29.4*365),
