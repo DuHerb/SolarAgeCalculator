@@ -1,20 +1,20 @@
 # SolarAgeCalculator
 
-###An App to calculate your age on each planet and how much spacetime you've got left.
+### An App to calculate your age on each planet and how much spacetime you've got left.
 
-###Author:
+### Author:
 
-####Dustin Herboldshimer
+#### Dustin Herboldshimer
 
-###Version:
+### Version:
 
-####0.0.1 - May 31 2019
+#### 0.0.1 - May 31 2019
 
-###Installation:
+### Installation:
 
-##Specifications:
+## Specifications:
 
-##Known Issues, Bugs, and ToDos
+## Known Issues, Bugs, and ToDos
 
 1. needs more validation options to trigger display messages(maybe an error parser in the solarage object)
 2. readme is a mess
