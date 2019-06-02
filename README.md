@@ -1,23 +1,23 @@
 # SolarAgeCalculator
 
-###An App to calculate your age on each planet and how much spacetime you've got left.
+### An App to calculate your age on each planet and how much spacetime you've got left.
 
-###Author:
+### Author:
 
-####Dustin Herboldshimer
+#### Dustin Herboldshimer
 
-###Version:
+### Version:
 
-####0.0.1 - May 31 2019
+#### 0.0.1 - May 31 2019
 
-###Installation:
+### Installation:
 From your terminal:
 1. [your local dir]$git clone https://github.com/DuHerb/SolarAgeCalculator.git
 2. [your local dir] SolarAgeCalculator$npm install
    1. Run local Server: [your local dir] SolarAgeCalculator$npm run start
    2. Run Jest to see test coverage: [your local dir] SolarAgeCalculator$npm run test
 
-##Specifications:
+## Specifications:
 | Spec                                                                  | Input      | Output                                                                                                      |
 |-----------------------------------------------------------------------|------------|-------------------------------------------------------------------------------------------------------------|
 | Retrieve a date(birthdate) from user                                  | 12-18-1980 | "12-18-1980"
@@ -30,7 +30,7 @@ From your terminal:
 | Return how many years on each planet till end of user life expectancy | 80 years   | Mercury Time = 173.5 years left                                                                             |
 | User uses select box to choose which planets data to display          | Mercury    | Your BirthDate = Dec 18 1980 Earth Age = 38 Life Expectancy = 80 Mercury Age = 158.5 SpaceTime Left = 173.5 |
 
-##Known Issues, Bugs, and ToDos
+## Known Issues, Bugs, and ToDos
 
 1. needs more validation options to trigger display messages(maybe an error parser in the solarage object)
 2. Planets outside Jupiter (saturn, uranus and neptune) are not included in options yet. They are so far out that your
