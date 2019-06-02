@@ -10,8 +10,8 @@
 From your terminal:
 1. [your local dir]$git clone https://github.com/DuHerb/SolarAgeCalculator.git
 2. [your local dir] SolarAgeCalculator$npm install
-   1. Run local Server: [your local dir] SolarAgeCalculator$npm run start
-   2. Run Jest: [your local dir] SolarAgeCalculator$npm run test
+- Run local Server: [your local dir] SolarAgeCalculator$npm run start
+- Run Jest: [your local dir] SolarAgeCalculator$npm run test
 
 ## Specifications:
 | Spec                                                                  | Input      | Output                                                                                                      |
