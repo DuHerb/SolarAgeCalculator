@@ -1,21 +1,17 @@
-# SolarAgeCalculator
+# <p align="center">Solar Age Calculator</p>
 
 ### An App to calculate your age on each planet and how much spacetime you've got left.
 
-### Author:
+### Author: Dustin Herboldshimer
 
-#### Dustin Herboldshimer
-
-### Version:
-
-#### 0.0.1 - May 31 2019
+### Version: 0.0.1 - May 31 2019
 
 ### Installation:
 From your terminal:
 1. [your local dir]$git clone https://github.com/DuHerb/SolarAgeCalculator.git
 2. [your local dir] SolarAgeCalculator$npm install
-   1. Run local Server: [your local dir] SolarAgeCalculator$npm run start
-   2. Run Jest to see test coverage: [your local dir] SolarAgeCalculator$npm run test
+3. Run local Server: [your local dir] SolarAgeCalculator$npm run start
+4. Run Jest: [your local dir] SolarAgeCalculator$npm run test
 
 ## Specifications:
 | Spec                                                                  | Input      | Output                                                                                                      |
