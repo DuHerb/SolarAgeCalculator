@@ -32,7 +32,10 @@ describe('solarage',() => {
 
     test('should return users age in days', () => {
       let earthAge = solarage.ageInDays();
-      expect(Math.floor(earthAge)).toEqual(14043);
+      let testBday = new Date("12-18-1980");
+      let testNow = new Date();
+      let expected = Math.floor(Math.abs(testNow - testBday)/(24*60*60*1000));
+      expect(Math.floor(earthAge)).toEqual(expected);
     });
 
     test('should return the correct planet by string', () => {
