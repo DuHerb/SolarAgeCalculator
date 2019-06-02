@@ -1,4 +1,4 @@
-# SolarAgeCalculator
+# <p align="center">Solar Age Calculator</p>
 
 ### An App to calculate your age on each planet and how much spacetime you've got left.
 
